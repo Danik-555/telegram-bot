@@ -28,7 +28,7 @@ async def form_name(message: Message, state: FSMContext):
         await state.set_state(Form.age)
         await message.answer("Отлично! Введите возраст")
     else:
-        text = "Введите корректное имя"
+        text = "Введите корректное имя!"
         await message.answer(text=text)
 
 
