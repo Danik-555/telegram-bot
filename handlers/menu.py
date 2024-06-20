@@ -14,6 +14,8 @@ router = Router()
 @router.message(Command('menu'))
 @router.message(Menu.to_menu)
 async def menu(message: Message, state: FSMContext):
+    dice = await message.answer_dice()
+    print(dice.dice.value)
     print((message.text))
     if message.text == "Меню" or message.text == "/menu":
         await state.set_state(Menu.menu)
