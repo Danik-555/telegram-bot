@@ -1,6 +1,6 @@
 import asyncio
 
-from handlers import form, help, start, menu, photo
+from handlers import form, help, start, menu
 
 from aiogram import Bot
 from config_reader import config
@@ -21,7 +21,6 @@ async def main():
         start.router,
         help.router,
         menu.router,
-        photo.router,
         form.router,
 
     )

@@ -51,19 +51,17 @@ menu_button_technic = ReplyKeyboardMarkup(
             ]
         )
 
-link_keyboard = InlineKeyboardMarkup(
-        inline_keyboard=[
-            [InlineKeyboardButton(text="Телеграм", url="https://t.me/MonsterDanik")],
-            [InlineKeyboardButton(text="Сайт", url="https://www.google.com/")],
-            [InlineKeyboardButton(text="информация об обоях", url="https://www.google.com/")]
-        ]
-)
 menu_points = ReplyKeyboardMarkup(
             keyboard=[
                 [KeyboardButton(text="природа")],
                 [KeyboardButton(text="люди")],
-                [KeyboardButton(text="техника")]
+                [KeyboardButton(text="техника")],
+                [KeyboardButton(text="другое")]
             ]
         )
 
-
+random_button = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="Бросить кубик и вывести другое изображение")]
+    ]
+)

@@ -17,7 +17,15 @@ class Menu(StatesGroup):
     nature = State()
     people = State()
     technic = State()
+    other = State()
+    message = State()
+
 class Buttons(StatesGroup):
     button_car = State()
     button_car1 = State()
+
+class Commands(StatesGroup):
+    commands = State()
+
+
 
